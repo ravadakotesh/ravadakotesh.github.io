@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CNC PLATE ASSEMBLY | Mechanical Design Engineer</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<nav class="navbar container">
+
+<div class="logo">
+RK<span>.</span>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../index.html#experience">Experience</a></li>
+
+<li><a href="../index.html#projects">Projects</a></li>
+
+<li><a href="../index.html#certifications">Certifications</a></li>
+
+<li><a href="../assets/resume.pdf" target="_blank">Resume</a></li>
+
+<li><a href="../index.html#contact">Contact</a></li>
+
+</ul>
+
+<button id="theme-toggle">
+☾
+</button>
+
+</nav>
+
+</header>
+
+<section class="section container">
+
+<div class="project-top-navigation">
+
+    <a href="../index.html#projects" class="project-nav-btn">
+
+        ← Back to Projects
+
+    </a>
+
+</div>
+
+<div class="section-title">
+
+<h2>
+CNC PLATE ASSEMBLY
+</h2>
+
+</div>
+
+<div class="project-overview">
+
+<h3>
+Project Overview
+</h3>
+
+<p>
+
+The CNC Plate Assembly is a precision mechanical assembly designed to support accurate positioning and clamping of components during machining operations. My contribution involved reverse engineering the existing assembly by capturing critical dimensions, developing accurate 3D CAD models, and creating a complete assembly with detailed engineering drawings. The project required careful interpretation of component interfaces and assembly relationships to produce production-ready documentation for manufacturing and future design modifications.
+
+</p>
+
+</div>
+
+<div class="project-viewer">
+
+<model-viewer
+
+id="project-model"
+
+class="project-model-viewer"
+
+src="../models/project5.glb"
+
+camera-controls
+
+disable-tap
+
+auto-rotate
+
+auto-rotate-delay="0"
+
+rotation-per-second="4deg"
+
+loading="eager"
+
+environment-image="neutral"
+
+exposure="1.1"
+
+shadow-intensity="1.2"
+
+shadow-softness="0.5"
+
+camera-orbit="45deg 75deg 65%"
+
+max-camera-orbit="auto auto 220%"
+
+interaction-prompt="none"
+
+ar
+
+touch-action="pan-y">
+
+</model-viewer>
+
+<div class="viewer-controls">
+
+<button id="rotate-btn" class="viewer-btn">
+
+⟳ Auto Rotate ON
+
+</button>
+
+<button id="explode-btn" class="viewer-btn">
+
+💥 Explode
+
+</button>
+
+<button id="reset-btn" class="viewer-btn">
+
+↺ Reset View
+
+</button>
+
+<button id="fullscreen-btn" class="viewer-btn">
+
+⛶ Full Screen
+
+</button>
+
+</div>
+
+</div>
+
+<div class="project-tech-info">
+
+<div class="tech-card">
+
+<h4>Software Used</h4>
+
+<p>
+
+Siemens NX<br>
+
+AutoCAD Mechanical
+
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<h4>Material</h4>
+
+<p>
+
+42CrMo4 Alloy Steel
+
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<h4>Manufacturing Process</h4>
+
+<p>
+
+CNC Milling<br>
+
+Drilling
+
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<h4>Deliverables</h4>
+
+<p>
+
+3D CAD Model<br>
+
+Manufacturing Drawing
+
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-section">
+
+<h3>Project Gallery</h3>
+
+<div class="image-gallery">
+
+<img
+src="../images/projects/project5/photos/photo1.jpg"
+alt="CNC PLATE ASSEMBLY Photo 1">
+
+<img
+src="../images/projects/project5/photos/photo2.jpg"
+alt="CNC PLATE ASSEMBLY Photo 2">
+
+
+</div>
+
+</div>
+
+<div class="drawing-section">
+
+    <h3>Drawing Gallery</h3>
+
+    <div class="drawing-gallery">
+
+        <div class="drawing-item">
+
+            <img
+                src="../images/projects/project5/drawings/drawing1.jpg"
+                alt="Drawing 1">
+
+            <div class="drawing-overlay">
+                🔍 Click to View
+            </div>
+
+        </div>
+
+        <div class="drawing-item">
+
+            <img
+                src="../images/projects/project5/drawings/drawing2.jpg"
+                alt="Drawing 2">
+
+            <div class="drawing-overlay">
+                🔍 Click to View
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ================= DRAWING VIEWER ================= -->
+
+<div id="drawing-lightbox" class="drawing-lightbox">
+
+    <button id="close-lightbox" class="lightbox-close">
+        ✕
+    </button>
+
+    <div id="drawing-counter" class="lightbox-counter">
+        1 / 1
+    </div>
+
+    <img
+        id="lightbox-image"
+        class="lightbox-image"
+        src=""
+        alt="Engineering Drawing">
+
+    <div class="lightbox-toolbar">
+
+        <button id="prev-drawing" class="lightbox-btn">
+            ◀ Previous
+        </button>
+
+        <button id="zoom-out" class="lightbox-btn">
+            −
+        </button>
+
+        <button id="zoom-in" class="lightbox-btn">
+            +
+        </button>
+
+        <button id="reset-zoom" class="lightbox-btn">
+            Reset
+        </button>
+
+        <button id="next-drawing" class="lightbox-btn">
+            Next ▶
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= PROJECT NAVIGATION ================= -->
+
+<div class="project-navigation container">
+
+    <a id="back-projects" class="project-nav-btn"
+       href="../index.html#projects">
+        ← Back to Projects
+    </a>
+
+    <div class="project-nav-right">
+
+        <a id="previous-project"
+           class="project-nav-btn"
+           style="display:none;">
+            ← Previous
+        </a>
+
+        <a id="next-project"
+           class="project-nav-btn"
+           style="display:none;">
+            Next →
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <p>
+
+            <span class="footer-name">Ravada Koteswar Rao</span>
+
+            <span class="footer-divider">|</span>
+
+            <span class="footer-role">Mechanical Design Engineer</span>
+
+            <span class="footer-divider">|</span>
+
+            <span class="footer-portfolio">Portfolio</span>
+
+        </p>
+
+        <button id="back-to-top" title="Back to Top">
+
+            <i class="fas fa-arrow-up"></i>
+
+        </button>
+
+    </div>
+
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
+
+
