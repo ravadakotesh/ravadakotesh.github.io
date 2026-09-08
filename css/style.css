@@ -932,20 +932,14 @@ gap:30px;
 
 }
 
-/*================ Mobile ================*/
+/*================ MOBILE ================*/
 
-@media(max-width:768px){
-
-.tools-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-gap:25px;
-
+@media screen and (pointer:coarse) and (max-width:1024px){
+    .tools-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:25px;
+    }
 }
-
-}
-
 
 /* ================= PROJECTS ================= */
 
